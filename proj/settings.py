@@ -57,10 +57,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "proj.urls"
 
-EMPLATES = [
+TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "restaurant" / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
